@@ -12,39 +12,39 @@ publish:
 
 make lint: 
 	npx eslint
-.DEFAULT_GOAL := build-run
+# .DEFAULT_GOAL := build-run
 
-setup:
-	./gradlew wrapper --gradle-version 8.4
+# setup:
+# 	./gradlew wrapper --gradle-version 8.4
 
-clean:
-	./gradlew clean
+# clean:
+# 	./gradlew clean
 
-build:
-	./gradlew clean build
+# build:
+# 	./gradlew clean build
 
-install:
-	./gradlew clean install
+# install:
+# 	./gradlew clean install
 
-run-dist:
-	./build/install/java-package/bin/java-package
+# run-dist:
+# 	./build/install/java-package/bin/java-package
 
-run:
-	./gradlew run
+# run:
+# 	./gradlew run
 
-test:
-	./gradlew test
+# test:
+# 	./gradlew test
 
-report:
-	./gradlew jacocoTestReport
+# report:
+# 	./gradlew jacocoTestReport
 
-lint:
-	./gradlew checkstyleMain
+# lint:
+# 	./gradlew checkstyleMain
 
-check-deps:
-	./gradlew dependencyUpdates -Drevision=release
+# check-deps:
+# 	./gradlew dependencyUpdates -Drevision=release
 
 
-build-run: build run
+# build-run: build run
 
-.PHONY: build
+# .PHONY: build
